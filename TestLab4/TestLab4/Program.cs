@@ -9,7 +9,7 @@ namespace TestLab4
         {
            MessageRepository rep = new MessageRepository();
 
-           Console.WriteLine(rep.GetMessage("/channels/0"));
+           Console.WriteLine(rep.GetMessages("https://discordapp.com/api/channels/659801659911962647/messages?limit=3")[0].id);
         }
     }
 }

@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Net;
 using System.Threading.Tasks;
@@ -18,6 +19,7 @@ namespace MockServer
             HttpListener listener = new HttpListener();
             // установка адресов прослушки
             listener.Prefixes.Add("http://localhost:8888/connection/");
+            listener.Prefixes.Add("http://localhost:8888/");
             
             listener.Start();
             Console.WriteLine("Ожидание подключений...");
@@ -57,8 +59,20 @@ namespace MockServer
         {
             switch (request)
             {
-                case "/connection/":
-                    int[] responseMsg = {5, 6};
+                case "/channels":
+                    
+                    List<Message> responseMsg = new List<Message>()
+                    {
+                        new Message()
+                        {
+                            id = "659888240651665458",
+                            channel_id = "659801659911962647",
+                            content = "Hello world"
+                        },
+                            
+                    };
+                        
+
                     SendMessageToClient(responseMsg,response);
                     break;
             }
