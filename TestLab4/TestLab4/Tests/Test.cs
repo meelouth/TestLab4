@@ -15,6 +15,5 @@ namespace TestLab4.Tests
             Assert.Pass();
         }
         
-        public void 
     }
 }

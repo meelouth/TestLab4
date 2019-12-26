@@ -1,0 +1,14 @@
+/Users/azeroth/RiderProjects/TestLab4/TestLab4/TestLab4/bin/Debug/netcoreapp2.2/NUnit3.TestAdapter.dll
+/Users/azeroth/RiderProjects/TestLab4/TestLab4/TestLab4/bin/Debug/netcoreapp2.2/NUnit3.TestAdapter.pdb
+/Users/azeroth/RiderProjects/TestLab4/TestLab4/TestLab4/bin/Debug/netcoreapp2.2/nunit.engine.netstandard.dll
+/Users/azeroth/RiderProjects/TestLab4/TestLab4/TestLab4/bin/Debug/netcoreapp2.2/TestLab4.deps.json
+/Users/azeroth/RiderProjects/TestLab4/TestLab4/TestLab4/bin/Debug/netcoreapp2.2/TestLab4.runtimeconfig.json
+/Users/azeroth/RiderProjects/TestLab4/TestLab4/TestLab4/bin/Debug/netcoreapp2.2/TestLab4.runtimeconfig.dev.json
+/Users/azeroth/RiderProjects/TestLab4/TestLab4/TestLab4/bin/Debug/netcoreapp2.2/TestLab4.dll
+/Users/azeroth/RiderProjects/TestLab4/TestLab4/TestLab4/bin/Debug/netcoreapp2.2/TestLab4.pdb
+/Users/azeroth/RiderProjects/TestLab4/TestLab4/TestLab4/obj/Debug/netcoreapp2.2/TestLab4.csprojAssemblyReference.cache
+/Users/azeroth/RiderProjects/TestLab4/TestLab4/TestLab4/obj/Debug/netcoreapp2.2/TestLab4.csproj.CoreCompileInputs.cache
+/Users/azeroth/RiderProjects/TestLab4/TestLab4/TestLab4/obj/Debug/netcoreapp2.2/TestLab4.AssemblyInfoInputs.cache
+/Users/azeroth/RiderProjects/TestLab4/TestLab4/TestLab4/obj/Debug/netcoreapp2.2/TestLab4.AssemblyInfo.cs
+/Users/azeroth/RiderProjects/TestLab4/TestLab4/TestLab4/obj/Debug/netcoreapp2.2/TestLab4.dll
+/Users/azeroth/RiderProjects/TestLab4/TestLab4/TestLab4/obj/Debug/netcoreapp2.2/TestLab4.pdb

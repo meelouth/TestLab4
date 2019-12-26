@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="adafbf48-4992-4022-91ce-548518c67b73" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../MockServer/MockServer/Server.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../MockServer/MockServer/Server.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MockServer/MockServer/bin/Debug/netcoreapp2.2/MockServer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../MockServer/MockServer/bin/Debug/netcoreapp2.2/MockServer.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MockServer/MockServer/bin/Debug/netcoreapp2.2/MockServer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../MockServer/MockServer/bin/Debug/netcoreapp2.2/MockServer.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MockServer/MockServer/bin/Debug/netcoreapp2.2/nunit_random_seed.tmp" beforeDir="false" afterPath="$PROJECT_DIR$/../MockServer/MockServer/bin/Debug/netcoreapp2.2/nunit_random_seed.tmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MockServer/MockServer/obj/Debug/netcoreapp2.2/MockServer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../MockServer/MockServer/obj/Debug/netcoreapp2.2/MockServer.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MockServer/MockServer/obj/Debug/netcoreapp2.2/MockServer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../MockServer/MockServer/obj/Debug/netcoreapp2.2/MockServer.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TestLab4/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TestLab4/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TestLab4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TestLab4/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestLab4/TestLab4.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/TestLab4/TestLab4.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestLab4/Tests/Test.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TestLab4/Tests/Test.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,6 +19,10 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/../MockServer/MockServer/Tests/MockServerUnitTest.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TestLab4/Tests/Test.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TestLab4/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TestLab4/Webclient/DiscordWebClient.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TestLab4/Webclient/WebClient.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TestLab4/Repository/MessageRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../MockServer/MockServer/Server.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -29,12 +30,18 @@
       <list>
         <option value="$PROJECT_DIR$/TestLab4/UnitTest1.cs" />
         <option value="$PROJECT_DIR$/TestLab4/Tests/UnitTest1.cs" />
+        <option value="$PROJECT_DIR$/TestLab4/Webclient/WebClient.cs" />
+        <option value="$PROJECT_DIR$/TestLab4/Webclient/DiscordWebClient.cs" />
+        <option value="$PROJECT_DIR$/TestLab4/Repository/MessageRepository.cs" />
         <option value="$PROJECT_DIR$/TestLab4/Tests/Test.cs" />
+        <option value="$PROJECT_DIR$/TestLab4/Program.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="1VW9cPyWRhkqiawp5rMhTGjW315" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="PropertiesComponent">
     <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
@@ -54,19 +61,19 @@
   </component>
   <component name="RunManager">
     <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
-      <option name="EXE_PATH" value="" />
+      <option name="EXE_PATH" value="$PROJECT_DIR$/TestLab4/bin/Debug/netcoreapp2.2/TestLab4.dll" />
       <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TestLab4/bin/Debug/netcoreapp2.2" />
       <option name="PASS_PARENT_ENVS" value="1" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
-      <option name="PROJECT_PATH" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/TestLab4/TestLab4.csproj" />
       <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
-      <option name="PROJECT_KIND" value="None" />
-      <option name="PROJECT_TFM" value="" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value=".NETCoreApp,Version=v2.2" />
       <method v="2">
         <option name="Build" enabled="true" />
       </method>
@@ -82,7 +89,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1577358062100</updated>
-      <workItem from="1577358063472" duration="1500000" />
+      <workItem from="1577358063472" duration="4352000" />
     </task>
     <servers />
   </component>
