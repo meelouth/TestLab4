@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="adafbf48-4992-4022-91ce-548518c67b73" name="Default Changelist" comment="" />
+    <list default="true" id="adafbf48-4992-4022-91ce-548518c67b73" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TestLab4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TestLab4/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestLab4/Tests/Test.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TestLab4/Tests/Test.cs" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +22,7 @@
       <list>
         <option value="$PROJECT_DIR$/TestLab4/UnitTest1.cs" />
         <option value="$PROJECT_DIR$/TestLab4/Tests/UnitTest1.cs" />
+        <option value="$PROJECT_DIR$/TestLab4/Tests/Test.cs" />
       </list>
     </option>
   </component>
@@ -51,7 +55,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1577358062100</updated>
-      <workItem from="1577358063472" duration="254000" />
+      <workItem from="1577358063472" duration="1500000" />
     </task>
     <servers />
   </component>

@@ -1,0 +1,14 @@
+/Users/azeroth/RiderProjects/TestLab4/MockServer/MockServer/bin/Debug/netcoreapp2.2/NUnit3.TestAdapter.dll
+/Users/azeroth/RiderProjects/TestLab4/MockServer/MockServer/bin/Debug/netcoreapp2.2/NUnit3.TestAdapter.pdb
+/Users/azeroth/RiderProjects/TestLab4/MockServer/MockServer/bin/Debug/netcoreapp2.2/nunit.engine.netstandard.dll
+/Users/azeroth/RiderProjects/TestLab4/MockServer/MockServer/bin/Debug/netcoreapp2.2/MockServer.deps.json
+/Users/azeroth/RiderProjects/TestLab4/MockServer/MockServer/bin/Debug/netcoreapp2.2/MockServer.runtimeconfig.json
+/Users/azeroth/RiderProjects/TestLab4/MockServer/MockServer/bin/Debug/netcoreapp2.2/MockServer.runtimeconfig.dev.json
+/Users/azeroth/RiderProjects/TestLab4/MockServer/MockServer/bin/Debug/netcoreapp2.2/MockServer.dll
+/Users/azeroth/RiderProjects/TestLab4/MockServer/MockServer/bin/Debug/netcoreapp2.2/MockServer.pdb
+/Users/azeroth/RiderProjects/TestLab4/MockServer/MockServer/obj/Debug/netcoreapp2.2/MockServer.csprojAssemblyReference.cache
+/Users/azeroth/RiderProjects/TestLab4/MockServer/MockServer/obj/Debug/netcoreapp2.2/MockServer.csproj.CoreCompileInputs.cache
+/Users/azeroth/RiderProjects/TestLab4/MockServer/MockServer/obj/Debug/netcoreapp2.2/MockServer.AssemblyInfoInputs.cache
+/Users/azeroth/RiderProjects/TestLab4/MockServer/MockServer/obj/Debug/netcoreapp2.2/MockServer.AssemblyInfo.cs
+/Users/azeroth/RiderProjects/TestLab4/MockServer/MockServer/obj/Debug/netcoreapp2.2/MockServer.dll
+/Users/azeroth/RiderProjects/TestLab4/MockServer/MockServer/obj/Debug/netcoreapp2.2/MockServer.pdb
