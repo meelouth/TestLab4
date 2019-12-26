@@ -1,4 +1,6 @@
 using System;
+using System.IO;
+using System.Net;
 using System.Net.NetworkInformation;
 using System.Net.Sockets;
 using NUnit.Framework;
@@ -21,36 +23,32 @@ namespace MockServer.Tests
         [Test]
         public void ServerCreated()
         {
-            string server = "127.0.0.1:8888";
-
             var ping = new Ping();
 
-            var reply = ping.Send(server, 60 * 1000);
+            var reply = ping.Send(new IPAddress(new byte[]{127,0,0,1}), 3000);
             
-            Assert.AreEqual(reply, reply.Status == IPStatus.Success);
+            Assert.AreEqual(reply.Status, IPStatus.Success);
         }
         
         [Test]
         public void ClientConnectedToServer()
         {
-            string server = "127.0.0.1";
-            int port = 8888;
+            WebRequest request = WebRequest.Create("http://localhost:8888/connection/");
             
-            TcpClient client = new TcpClient(server,port);
+            request.Credentials = CredentialCache.DefaultCredentials;
             
-            Byte[] data = new Byte[256];
+            WebResponse response = request.GetResponse();
             
-            NetworkStream stream = client.GetStream();
+            Stream stream = response.GetResponseStream();
             
-            String responseData = String.Empty;
+            StreamReader reader = new StreamReader(stream);
             
-            Int32 bytes = stream.Read(data, 0, data.Length);
-            responseData = System.Text.Encoding.ASCII.GetString(data, 0, bytes);
+            string responseFromServer = reader.ReadToEnd();
+
+            Assert.AreEqual("Hello world",responseFromServer);
             
-            Assert.AreEqual("Hello world",responseData);
-            
-            stream.Close();         
-            client.Close();      
+            stream.Close();
+            response.Close();
         }
     }
 }

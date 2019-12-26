@@ -14,7 +14,6 @@
           <e p="Debug" t="Include">
             <e p="netcoreapp2.2" t="Include">
               <e p="TestLab4.AssemblyInfo.cs" t="Include" />
-              <e p="TestLab4.Program.cs" t="Include" />
             </e>
           </e>
         </e>

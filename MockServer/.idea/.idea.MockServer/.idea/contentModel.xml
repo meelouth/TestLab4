@@ -17,7 +17,7 @@
             </e>
           </e>
         </e>
-        <e p="TCPListenerApp.cs" t="Include" />
+        <e p="Server.cs" t="Include" />
         <e p="Tests" t="Include">
           <e p="MockServerUnitTest.cs" t="Include" />
         </e>
