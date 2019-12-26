@@ -3,6 +3,7 @@ using System.IO;
 using System.Net;
 using System.Net.NetworkInformation;
 using System.Net.Sockets;
+using Newtonsoft.Json;
 using NUnit.Framework;
 
 namespace MockServer.Tests
@@ -31,21 +32,21 @@ namespace MockServer.Tests
         }
         
         [Test]
-        public void ClientConnectedToServer()
+        public void ClientConnectedToServerAndReceiveMessage()
         {
             WebRequest request = WebRequest.Create("http://localhost:8888/connection/");
             
             request.Credentials = CredentialCache.DefaultCredentials;
             
-            WebResponse response = request.GetResponse();
+            WebResponse response = request.GetResponse(); 
             
-            Stream stream = response.GetResponseStream();
+            Stream stream = response.GetResponseStream(); 
             
             StreamReader reader = new StreamReader(stream);
             
             string responseFromServer = reader.ReadToEnd();
-
-            Assert.AreEqual("Hello world",responseFromServer);
+            
+            Assert.AreEqual("[5,6]",responseFromServer);
             
             stream.Close();
             response.Close();

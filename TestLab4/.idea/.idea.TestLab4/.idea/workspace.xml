@@ -2,19 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="adafbf48-4992-4022-91ce-548518c67b73" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../MockServer/MockServer/Server.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MockServer/.idea/.idea.MockServer/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MockServer/.idea/.idea.MockServer/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MockServer/MockServer/TCPListenerApp.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MockServer/MockServer/Server.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../MockServer/MockServer/Server.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../MockServer/MockServer/Tests/MockServerUnitTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../MockServer/MockServer/Tests/MockServerUnitTest.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../MockServer/MockServer/bin/Debug/netcoreapp2.2/MockServer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../MockServer/MockServer/bin/Debug/netcoreapp2.2/MockServer.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../MockServer/MockServer/bin/Debug/netcoreapp2.2/MockServer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../MockServer/MockServer/bin/Debug/netcoreapp2.2/MockServer.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../MockServer/MockServer/bin/Debug/netcoreapp2.2/nunit_random_seed.tmp" beforeDir="false" afterPath="$PROJECT_DIR$/../MockServer/MockServer/bin/Debug/netcoreapp2.2/nunit_random_seed.tmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MockServer/MockServer/obj/Debug/netcoreapp2.2/MockServer.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../MockServer/MockServer/obj/Debug/netcoreapp2.2/MockServer.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../MockServer/MockServer/obj/Debug/netcoreapp2.2/MockServer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../MockServer/MockServer/obj/Debug/netcoreapp2.2/MockServer.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../MockServer/MockServer/obj/Debug/netcoreapp2.2/MockServer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../MockServer/MockServer/obj/Debug/netcoreapp2.2/MockServer.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TestLab4/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TestLab4/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TestLab4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TestLab4/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestLab4/TestLab4.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/TestLab4/TestLab4.csproj" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,6 +23,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/../MockServer/MockServer/Tests/MockServerUnitTest.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TestLab4/Tests/Test.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../MockServer/MockServer/Server.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
