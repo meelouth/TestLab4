@@ -18,6 +18,7 @@ namespace MockServer
             HttpListener listener = new HttpListener();
             // установка адресов прослушки
             listener.Prefixes.Add("http://localhost:8888/connection/");
+            
             listener.Start();
             Console.WriteLine("Ожидание подключений...");
 
@@ -29,11 +30,8 @@ namespace MockServer
 
                 // получаем объект ответа
                 HttpListenerResponse response = context.Response;
-                // создаем ответ в виде кода html
-                int[] responseMsg = {5, 6};
-                SendMessageToClient(responseMsg,response);
 
-                // получаем поток ответа и пишем в него ответ
+               ProcessRequest(request.Url.AbsolutePath, response);
             }
         }
 
@@ -53,6 +51,17 @@ namespace MockServer
         {
             string json = JsonConvert.SerializeObject(message);
             return System.Text.Encoding.UTF8.GetBytes(json);
+        }
+
+        private static void ProcessRequest(string request, HttpListenerResponse response)
+        {
+            switch (request)
+            {
+                case "/connection/":
+                    int[] responseMsg = {5, 6};
+                    SendMessageToClient(responseMsg,response);
+                    break;
+            }
         }
     }
 }

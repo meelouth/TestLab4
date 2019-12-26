@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="adafbf48-4992-4022-91ce-548518c67b73" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../MockServer/MockServer/Server.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../MockServer/MockServer/Server.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MockServer/MockServer/Tests/MockServerUnitTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../MockServer/MockServer/Tests/MockServerUnitTest.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../MockServer/MockServer/bin/Debug/netcoreapp2.2/MockServer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../MockServer/MockServer/bin/Debug/netcoreapp2.2/MockServer.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../MockServer/MockServer/bin/Debug/netcoreapp2.2/MockServer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../MockServer/MockServer/bin/Debug/netcoreapp2.2/MockServer.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../MockServer/MockServer/bin/Debug/netcoreapp2.2/nunit_random_seed.tmp" beforeDir="false" afterPath="$PROJECT_DIR$/../MockServer/MockServer/bin/Debug/netcoreapp2.2/nunit_random_seed.tmp" afterDir="false" />
