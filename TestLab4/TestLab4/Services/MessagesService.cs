@@ -6,7 +6,7 @@ namespace TestLab4.Services
 {
     public class MessagesService
     {
-        private IMessageRepository messageRepository;
+        public IMessageRepository messageRepository;
 
         public MessagesService(IMessageRepository messageRepository)
         {

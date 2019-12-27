@@ -8,7 +8,7 @@ namespace TestLab4.Repository
 {
     public class MessageRepository : IMessageRepository
     {
-        private string baseURL = "https://discordapp.com/api/channels/";
+        public string baseURL { get; set; }
 
         public List<Message> GetMessages(string channelId)
         {

@@ -16,14 +16,17 @@ namespace TestLab4.Tests
         public void GetMessageFromRepositoryTest()
         {
             IMessageRepository messageRepository = new MessageRepository();
+            
+            messageRepository.baseURL =  "https://discordapp.com/api/channels/";
+
 
             string receiveMessage = messageRepository.GetMessages("659801659911962647")[0]
                 .content;
             
             Assert.AreEqual("Yeeey", receiveMessage);
 
-            messageRepository = new  TestLab4.Tests.Repository.MessageRepository();
-            
+            messageRepository.baseURL =  "http://localhost:8888/";
+
             string receiveMessageFromMock =
                 messageRepository.GetMessages(
                         "659801659911962647")[0]
@@ -36,13 +39,14 @@ namespace TestLab4.Tests
         public void GetMostLongContent()
         {
             MessagesService messagesService = new MessagesService(new MessageRepository());
+            messagesService.messageRepository.baseURL =  "https://discordapp.com/api/channels/";
 
             string channelId = "659801659911962647";
             
-            Assert.AreEqual("Hello world",messagesService.GetMostLongContent(channelId).content);
-            Assert.AreEqual(11,messagesService.GetMostLongContent(channelId).content.Length);
+            Assert.AreEqual("Yeeey",messagesService.GetMostLongContent(channelId).content);
+            Assert.AreEqual(5,messagesService.GetMostLongContent(channelId).content.Length);
             
-            messagesService = new MessagesService(new Repository.MessageRepository());
+            messagesService.messageRepository = new Repository.MessageRepository();
             
             Assert.AreEqual("Hello world", messagesService.GetMostLongContent(channelId).content);
             Assert.AreEqual(11,messagesService.GetMostLongContent(channelId).content.Length);

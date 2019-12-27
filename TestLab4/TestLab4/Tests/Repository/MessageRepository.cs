@@ -1,29 +1,27 @@
-using System;
 using System.Collections.Generic;
-using Newtonsoft.Json;
 using TestLab4.Model;
 using TestLab4.Repository;
-using TestLab4.Webclient;
 
 namespace TestLab4.Tests.Repository
 {
     public class MessageRepository : IMessageRepository
     {
-        private string baseURL = "http://localhost:8888/";
-
-        public List<Message> GetMessages(string channelId)
+        public List<Message> GetMessages(string request)
         {
-            string request = $"{baseURL}{channelId}";
-            
-            WebClient webClient = new WebClient();
-            string json = webClient.SendRequest(request, "GET");
-            return Parse(json);
+            List<Message> responseMsg = new List<Message>()
+            {
+                new Message()
+                {
+                    id = "659888240651665458",
+                    channel_id = "659801659911962647",
+                    content = "Hello world"
+                },
+                            
+            };
+
+            return responseMsg;
         }
 
-        private List<Message> Parse(string json)
-        {
-            var messages = JsonConvert.DeserializeObject<List<Message>>(json);
-            return messages;
-        }
+        public string baseURL { get; set; }
     }
 }

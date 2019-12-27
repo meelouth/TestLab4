@@ -60,9 +60,10 @@ namespace MockServer
 
         private static void ProcessRequest(string request, HttpListenerResponse response)
         {
+            Console.WriteLine(request);
             switch (request)
             {
-                case "/messages":
+                case "/659801659911962647/messages":
                     
                     List<Message> responseMsg = new List<Message>()
                     {

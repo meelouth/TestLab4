@@ -6,5 +6,6 @@ namespace TestLab4.Repository
     public interface IMessageRepository
     {
         List<Message> GetMessages(string request);
+        string baseURL { get; set; }
     }
 }
