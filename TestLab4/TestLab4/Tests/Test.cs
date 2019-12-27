@@ -15,16 +15,18 @@ namespace TestLab4.Tests
         [Test]
         public void GetMessageFromRepositoryTest()
         {
-            var messageRepository = new MessageRepository();
+            IMessageRepository messageRepository = new MessageRepository();
 
-            string receiveMessage = messageRepository.GetMessages("https://discordapp.com/api/channels/659801659911962647/messages?limit=3")[0]
+            string receiveMessage = messageRepository.GetMessages("659801659911962647")[0]
                 .content;
             
-            Assert.AreEqual("Hello world", receiveMessage);
+            Assert.AreEqual("Yeeey", receiveMessage);
 
+            messageRepository = new  TestLab4.Tests.Repository.MessageRepository();
+            
             string receiveMessageFromMock =
                 messageRepository.GetMessages(
-                        "http://localhost:8888/channels")[0]
+                        "659801659911962647")[0]
                     .content;
             
             Assert.AreEqual("Hello world", receiveMessageFromMock);
@@ -48,12 +50,33 @@ namespace TestLab4.Tests
         }
 
         [Test]
-        
+        public void GetReaction()
+        {            
+            var reactionRepository = new ReactionRepository();
+
+            Emoji emoji = new Emoji()
+            {
+                id = "41771983429993937",
+                name = "LUL",
+                unicode = "\U0001F3D3"
+            };
+            Reaction reaction = new Reaction
+            {
+                emoji = emoji,
+                channelId = "659801659911962647",
+                messageId = "659888240651665458"
+            };
+            
+            string username = "Superduper Bot";
+
+            Assert.AreEqual(username, reactionRepository.GetReactions(reaction)[0].username);
+
+        }
         
         [Test]
         public void CreateReaction()
         {
-            var reactionRepository = new ReactionRepository();
+            IReactionRepository reactionRepository = new ReactionRepository();
             
             Emoji emoji = new Emoji()
             {
@@ -74,6 +97,11 @@ namespace TestLab4.Tests
 
             Assert.AreEqual(username, reactionRepository.GetReactions(reaction)[0].username);
             
+            reactionRepository = new TestLab4.Tests.Repository.ReactionRepository();
+            
+            reactionRepository.CreateReaction(reaction);
+            
+            Assert.AreEqual(username, reactionRepository.GetReactions(reaction)[0].username);
             
         }
     }

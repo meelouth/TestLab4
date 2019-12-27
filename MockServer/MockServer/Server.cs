@@ -7,8 +7,11 @@ using Newtonsoft.Json;
 
 namespace MockServer
 {
+    
     class Server
     {
+         static ReactionRepository repository = new ReactionRepository();
+
         static void Main(string[] args)
         {
             Listen();
@@ -95,7 +98,20 @@ namespace MockServer
                     };
                     SendMessageToClient(responseMessages,response);
                     break;
+                
+                case "/createReaction":
+                    User user = new User
+                    {
+                        id = "",
+                        username = "Superduper Bot"
+                    };
+                    repository.reactions.Add(user);
+                    SendMessageToClient("",response);
 
+                    break;
+                case "/getReaction":
+                    SendMessageToClient(repository.reactions,response);
+                    break;
             }
         }
     }
