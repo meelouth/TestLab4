@@ -2,22 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="adafbf48-4992-4022-91ce-548518c67b73" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../MockServer/.idea/.idea.MockServer/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MockServer/.idea/.idea.MockServer/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../MockServer/MockServer/Server.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../MockServer/MockServer/Server.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MockServer/MockServer/bin/Debug/netcoreapp2.2/MockServer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../MockServer/MockServer/bin/Debug/netcoreapp2.2/MockServer.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MockServer/MockServer/bin/Debug/netcoreapp2.2/MockServer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../MockServer/MockServer/bin/Debug/netcoreapp2.2/MockServer.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MockServer/MockServer/bin/Debug/netcoreapp2.2/nunit_random_seed.tmp" beforeDir="false" afterPath="$PROJECT_DIR$/../MockServer/MockServer/bin/Debug/netcoreapp2.2/nunit_random_seed.tmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MockServer/MockServer/obj/Debug/netcoreapp2.2/MockServer.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../MockServer/MockServer/obj/Debug/netcoreapp2.2/MockServer.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../MockServer/MockServer/obj/Debug/netcoreapp2.2/MockServer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../MockServer/MockServer/obj/Debug/netcoreapp2.2/MockServer.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../MockServer/MockServer/obj/Debug/netcoreapp2.2/MockServer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../MockServer/MockServer/obj/Debug/netcoreapp2.2/MockServer.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TestLab4/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TestLab4/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TestLab4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TestLab4/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestLab4/Model/Message.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TestLab4/Model/Message.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestLab4/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TestLab4/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestLab4/Repository/MessageRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TestLab4/Repository/MessageRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestLab4/TestLab4.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/TestLab4/TestLab4.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestLab4/Services/MessagesService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TestLab4/Services/MessagesService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestLab4/Tests/Test.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TestLab4/Tests/Test.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestLab4/Webclient/DiscordWebClient.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestLab4/Webclient/WebClient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TestLab4/Webclient/WebClient.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestLab4/bin/Debug/netcoreapp2.2/TestLab4.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TestLab4/bin/Debug/netcoreapp2.2/TestLab4.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestLab4/bin/Debug/netcoreapp2.2/TestLab4.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TestLab4/bin/Debug/netcoreapp2.2/TestLab4.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestLab4/bin/Debug/netcoreapp2.2/nunit_random_seed.tmp" beforeDir="false" afterPath="$PROJECT_DIR$/TestLab4/bin/Debug/netcoreapp2.2/nunit_random_seed.tmp" afterDir="false" />
@@ -36,16 +30,18 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/../MockServer/MockServer/Tests/MockServerUnitTest.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/TestLab4/Tests/Test.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TestLab4/Services/MessagesService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TestLab4/Services/ReactionService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TestLab4/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TestLab4/Model/Reaction.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TestLab4/Repository/ReactionRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TestLab4/Tests/Repository/MessageRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TestLab4/Webclient/WebClient.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TestLab4/Model/Message.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TestLab4/Repository/MessageRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../MockServer/MockServer/Server.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TestLab4/Tests/Test.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TestLab4/Repository/IMessageRepository.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -54,13 +50,16 @@
         <option value="$PROJECT_DIR$/TestLab4/Tests/UnitTest1.cs" />
         <option value="$PROJECT_DIR$/TestLab4/Model/Reaction.cs" />
         <option value="$PROJECT_DIR$/TestLab4/Repository/ReactionRepository.cs" />
-        <option value="$PROJECT_DIR$/TestLab4/Services/MessagesService.cs" />
         <option value="$PROJECT_DIR$/TestLab4/Services/ReactionService.cs" />
         <option value="$PROJECT_DIR$/TestLab4/Webclient/DiscordWebClient.cs" />
-        <option value="$PROJECT_DIR$/TestLab4/Model/Message.cs" />
-        <option value="$PROJECT_DIR$/TestLab4/Repository/MessageRepository.cs" />
         <option value="$PROJECT_DIR$/TestLab4/Webclient/WebClient.cs" />
+        <option value="$PROJECT_DIR$/TestLab4/Services/IMessageRepository.cs" />
         <option value="$PROJECT_DIR$/TestLab4/Program.cs" />
+        <option value="$PROJECT_DIR$/TestLab4/Model/Message.cs" />
+        <option value="$PROJECT_DIR$/TestLab4/Services/MessagesService.cs" />
+        <option value="$PROJECT_DIR$/TestLab4/Repository/IMessageRepository.cs" />
+        <option value="$PROJECT_DIR$/TestLab4/Repository/MessageRepository.cs" />
+        <option value="$PROJECT_DIR$/TestLab4/Tests/Repository/MessageRepository.cs" />
         <option value="$PROJECT_DIR$/TestLab4/Tests/Test.cs" />
       </list>
     </option>
@@ -116,7 +115,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1577358062100</updated>
-      <workItem from="1577358063472" duration="16898000" />
+      <workItem from="1577358063472" duration="20231000" />
     </task>
     <servers />
   </component>

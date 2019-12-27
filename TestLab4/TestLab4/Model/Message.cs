@@ -8,6 +8,6 @@ namespace TestLab4.Model
     {
         public string id;
         public string channel_id;
-        public string content;
+        public string content { get; set; }
     }
 }

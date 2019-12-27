@@ -59,7 +59,7 @@ namespace MockServer
         {
             switch (request)
             {
-                case "/channels":
+                case "/messages":
                     
                     List<Message> responseMsg = new List<Message>()
                     {
@@ -71,10 +71,31 @@ namespace MockServer
                         },
                             
                     };
-                        
-
                     SendMessageToClient(responseMsg,response);
                     break;
+                
+                case "/659801659911962647":
+                    
+                    List<Message> responseMessages = new List<Message>()
+                    {
+                        new Message()
+                        {
+                            id = "659888240651665458",
+                            channel_id = "659801659911962647",
+                            content = "Hello world"
+                        },
+                        
+                        new Message()
+                        {
+                            id = "659888240651665458",
+                            channel_id = "659801659911962647",
+                            content = "1"
+                        },
+                            
+                    };
+                    SendMessageToClient(responseMessages,response);
+                    break;
+
             }
         }
     }

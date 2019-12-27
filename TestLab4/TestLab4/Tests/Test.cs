@@ -1,5 +1,6 @@
 using NUnit.Framework;
 using TestLab4.Repository;
+using TestLab4.Services;
 
 namespace TestLab4.Tests
 {
@@ -27,6 +28,22 @@ namespace TestLab4.Tests
             
             Assert.AreEqual("Hello world", receiveMessageFromMock);
         }
-        
+
+        [Test]
+        public void GetMostLongContent()
+        {
+            MessagesService messagesService = new MessagesService(new MessageRepository());
+
+            string channelId = "659801659911962647";
+            
+            Assert.AreEqual("Hello world",messagesService.GetMostLongContent(channelId).content);
+            Assert.AreEqual(11,messagesService.GetMostLongContent(channelId).content.Length);
+            
+            messagesService = new MessagesService(new Repository.MessageRepository());
+            
+            Assert.AreEqual("Hello world", messagesService.GetMostLongContent(channelId).content);
+            Assert.AreEqual(11,messagesService.GetMostLongContent(channelId).content.Length);
+
+        }
     }
 }

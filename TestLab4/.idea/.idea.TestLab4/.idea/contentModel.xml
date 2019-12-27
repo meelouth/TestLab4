@@ -23,6 +23,7 @@
         </e>
         <e p="Program.cs" t="Include" />
         <e p="Repository" t="Include">
+          <e p="IMessageRepository.cs" t="Include" />
           <e p="MessageRepository.cs" t="Include" />
           <e p="ReactionRepository.cs" t="Include" />
         </e>
@@ -32,6 +33,9 @@
         </e>
         <e p="TestLab4.csproj" t="IncludeRecursive" />
         <e p="Tests" t="Include">
+          <e p="Repository" t="Include">
+            <e p="MessageRepository.cs" t="Include" />
+          </e>
           <e p="Test.cs" t="Include" />
         </e>
         <e p="Webclient" t="Include">
