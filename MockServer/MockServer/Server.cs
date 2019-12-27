@@ -100,7 +100,7 @@ namespace MockServer
                     SendMessageToClient(responseMessages,response);
                     break;
                 
-                case "/createReaction":
+                case "/659801659911962647/messages/659888240651665458/reactions/%F0%9F%8F%93/@me":
                     User user = new User
                     {
                         id = "",
@@ -110,7 +110,19 @@ namespace MockServer
                     SendMessageToClient("",response);
 
                     break;
-                case "/getReaction":
+                case "/659801659911962647/messages/659888240651665458/reactions/%F0%9F%8F%93":
+                    SendMessageToClient(repository.reactions,response);
+                    break;
+                case "/659801659911962647/messages/659888240651665458/reactions/%F0%9F%98%86/@me":
+                    User user1 = new User
+                    {
+                        id = "",
+                        username = "Superduper Bot"
+                    };
+                    repository.reactions.Add(user1);
+                    SendMessageToClient("",response);
+                    break;
+                case "/659801659911962647/messages/659888240651665458/reactions/%F0%9F%98%86":
                     SendMessageToClient(repository.reactions,response);
                     break;
             }

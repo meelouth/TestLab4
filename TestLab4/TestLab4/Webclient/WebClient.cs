@@ -13,7 +13,7 @@ namespace TestLab4.Webclient
            // requestString = baseURL + requestString;
             
             WebRequest request = WebRequest.Create(requestString); 
-            request.Headers.Set("Authorization", "Bot NjU5NzkwMzA4NTA2MzM3MzAw.XgX3lQ.ilXhs4-58chDVMAOnnUV-agH_VE");
+            request.Headers.Set("Authorization", "Bot NjU5NzkwMzA4NTA2MzM3MzAw.XgYpYA.7Oz5qaLQT2vJk9Zi8LAhfOup4eA");
 
             request.Method = method;
 

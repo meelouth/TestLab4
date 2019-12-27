@@ -57,6 +57,8 @@ namespace TestLab4.Tests
         public void GetReaction()
         {            
             var reactionRepository = new ReactionRepository();
+            
+            reactionRepository.baseURL =  "https://discordapp.com/api/channels/";
 
             Emoji emoji = new Emoji()
             {
@@ -81,6 +83,7 @@ namespace TestLab4.Tests
         public void CreateReaction()
         {
             IReactionRepository reactionRepository = new ReactionRepository();
+            reactionRepository.baseURL =  "https://discordapp.com/api/channels/";
             
             Emoji emoji = new Emoji()
             {
@@ -99,14 +102,64 @@ namespace TestLab4.Tests
 
             string username = "Superduper Bot";
 
-            Assert.AreEqual(username, reactionRepository.GetReactions(reaction)[0].username);
+            Assert.AreEqual(username, reactionRepository.GetReactions(reaction)[0].username); //change tests
             
-            reactionRepository = new TestLab4.Tests.Repository.ReactionRepository();
+            reactionRepository.baseURL = "http://localhost:8888/";
             
             reactionRepository.CreateReaction(reaction);
             
             Assert.AreEqual(username, reactionRepository.GetReactions(reaction)[0].username);
+        }
+
+        [Test]
+        public void CreateReactionService()
+        {
+            IReactionRepository reactionRepository = new ReactionRepository(); 
             
+            reactionRepository.baseURL =  "https://discordapp.com/api/channels/";
+
+            
+            ReactionService reactionService = new ReactionService(reactionRepository);
+            
+            Emoji emoji = new Emoji()
+            {
+                id = "41771983429993937",
+                name = "LUL",
+                unicode = "\U0001F606"
+            };
+            Reaction reaction = new Reaction
+            {
+                emoji = emoji,
+                channelId = "659801659911962647",
+                messageId = "659888240651665458"
+            };
+            
+            reactionService.React(reaction);
+
+            string usernameWhoCreateReaction = "Superduper Bot";
+            
+            Assert.AreEqual(usernameWhoCreateReaction, reactionService.ReactionRepository.GetReactions(reaction)[0]
+                .username);
+            
+            reactionService.ReactionRepository.baseURL =  "http://localhost:8888/";
+
+            Emoji emoji1 = new Emoji()
+            {
+                id = "41771983429993937",
+                name = "LUL",
+                unicode = "\U0001F923"
+            };
+            Reaction reaction1 = new Reaction
+            {
+                emoji = emoji,
+                channelId = "659801659911962647",
+                messageId = "659888240651665458"
+            };
+            
+            reactionService.React(reaction1);
+
+            Assert.AreEqual(usernameWhoCreateReaction, reactionService.ReactionRepository.GetReactions(reaction1)[0]
+                .username);
         }
     }
 }

@@ -10,21 +10,22 @@ namespace TestLab4.Tests.Repository
     public class ReactionRepository : IReactionRepository
     {
         public string baseURL { get; set; }
+
+        private List<User> users = new List<User>();
         public void CreateReaction(Reaction reaction)
         {
-            
+            User user = new User
+            {
+                id = "123",
+                username = "Superduper Bot"
+            };
+
+                users.Add(user);
         }
 
         public List<User> GetReactions(Reaction reaction)
         {
-            return new List<User>
-            {
-                new User
-                {
-                    id = "123",
-                    username = "Superduper Bot"
-                }
-            };
+            return users;
         }
     }
 }
